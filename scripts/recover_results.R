@@ -1,0 +1,16 @@
+# Recalculate reported validation statistics from the supplied historical workspace.
+# This does not retrain a model or evaluate the total-data deployment fit.
+args<-commandArgs(trailingOnly=TRUE)
+if(length(args)!=1L) stop('Supply the original workspace path.')
+e<-new.env();suppressWarnings(load(args[1],envir=e))
+p<-e$valid_pred_xgb; cls<-c('Low','Medium','High')
+a<-as.matrix(p[paste0('.pred_',cls)])
+truth<-factor(p$Target,levels=cls); pred<-factor(cls[max.col(a,ties.method='first')],levels=cls)
+cm<-table(truth,pred); tp<-diag(cm); precision<-tp/colSums(cm); recall<-tp/rowSums(cm)
+f1<-2*precision*recall/(precision+recall)
+per_class<-data.frame(class=cls,precision=as.numeric(precision),recall=as.numeric(recall),f1=as.numeric(f1),support=as.numeric(rowSums(cm)))
+metrics<-data.frame(validation_n=nrow(p),training_n=nrow(e$train_split),total_labeled_n=nrow(e$total),competition_test_n=nrow(e$submision),accuracy=mean(truth==pred),f1_macro=mean(f1),f1_weighted=weighted.mean(f1,rowSums(cm)),multiclass_log_loss=-mean(log(pmax(a[cbind(seq_len(nrow(a)),as.integer(truth))],1e-15))))
+write.csv(metrics,'reports/tables/validation_metrics.csv',row.names=FALSE)
+write.csv(per_class,'reports/tables/per_class_metrics.csv',row.names=FALSE)
+write.csv(e$best_params_xgb,'reports/tables/hyperparameters.csv',row.names=FALSE)
+print(metrics)

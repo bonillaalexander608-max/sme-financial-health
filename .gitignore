@@ -1,0 +1,9 @@
+.RData
+.Rhistory
+.Rproj.user/
+renv/library/
+renv/staging/
+*.log
+.env
+__pycache__/
+models/workspace*

@@ -1,0 +1,11 @@
+{
+  "validation_n": 1924,
+  "training_n": 7694,
+  "total_labeled_n": 9618,
+  "competition_test_n": 2405,
+  "accuracy": 0.882016632016632,
+  "f1_macro": 0.8141179184139832,
+  "f1_weighted": 0.8763614467111926,
+  "multiclass_log_loss": 0.29987675040022316,
+  "source": "Stored valid_pred_xgb in supplied workspace; not a fresh untouched test evaluation."
+}

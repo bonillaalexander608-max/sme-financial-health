@@ -1,0 +1,346 @@
+{
+  "model_id": "xgb-no-id-989",
+  "classes": [
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "fields": {
+    "country": {
+      "type": "string",
+      "nullable": false,
+      "enum": [
+        "eswatini",
+        "lesotho",
+        "malawi",
+        "zimbabwe"
+      ]
+    },
+    "owner_age": {
+      "type": "number",
+      "nullable": true,
+      "minimum": 0
+    },
+    "attitude_stable_business_environment": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        "Don\u2019t know or N/A",
+        "No",
+        "Yes"
+      ]
+    },
+    "attitude_worried_shutdown": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        "Don\u2019t know or N/A",
+        "No",
+        "Yes"
+      ]
+    },
+    "compliance_income_tax": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        "Don\u2019t know",
+        "No",
+        "Refused",
+        "Yes"
+      ]
+    },
+    "perception_insurance_doesnt_cover_losses": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        "Don't know",
+        "No",
+        "Yes"
+      ]
+    },
+    "perception_cannot_afford_insurance": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        "Don't know",
+        "No",
+        "Yes"
+      ]
+    },
+    "personal_income": {
+      "type": "number",
+      "nullable": true,
+      "minimum": 0
+    },
+    "business_expenses": {
+      "type": "number",
+      "nullable": true,
+      "minimum": 0
+    },
+    "business_turnover": {
+      "type": "number",
+      "nullable": true,
+      "minimum": 0
+    },
+    "business_age_years": {
+      "type": "number",
+      "nullable": true,
+      "minimum": 0
+    },
+    "motor_vehicle_insurance": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        "Don't know",
+        "Have now",
+        "Never had",
+        "Used to have but don\u2019t have now"
+      ]
+    },
+    "has_mobile_money": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        "Don't know",
+        "Have now",
+        "Never had",
+        "Used to have but don't have now",
+        "Used to have but don\u2019t have now"
+      ]
+    },
+    "current_problem_cash_flow": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        "0",
+        "No",
+        "Yes"
+      ]
+    },
+    "has_cellphone": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        "No",
+        "Yes"
+      ]
+    },
+    "owner_sex": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        "Female",
+        "Male"
+      ]
+    },
+    "offers_credit_to_customers": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        "No",
+        "Yes, always",
+        "Yes, sometimes"
+      ]
+    },
+    "attitude_satisfied_with_achievement": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        "Don't know",
+        "Don\u2019t know or N/A",
+        "No",
+        "Yes"
+      ]
+    },
+    "has_credit_card": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        "Don't know",
+        "Have now",
+        "Never had",
+        "Used to have but don't have now",
+        "Used to have but don\u2019t have now"
+      ]
+    },
+    "keeps_financial_records": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        "No",
+        "Yes",
+        "Yes, always",
+        "Yes, sometimes"
+      ]
+    },
+    "perception_insurance_companies_dont_insure_businesses_like_yours": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        "Don't Know",
+        "Don't know",
+        "Don?t know / doesn?t apply",
+        "No",
+        "Yes"
+      ]
+    },
+    "perception_insurance_important": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        " Do not know / N\u200e/A",
+        "Don't Know",
+        "Don?t know / doesn?t apply",
+        "No",
+        "Yes"
+      ]
+    },
+    "has_insurance": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        "No",
+        "Yes"
+      ]
+    },
+    "covid_essential_service": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        "Don't know",
+        "No",
+        "Yes"
+      ]
+    },
+    "attitude_more_successful_next_year": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        "Don't know",
+        "Don\u2019t know or N/A",
+        "No",
+        "Yes"
+      ]
+    },
+    "problem_sourcing_money": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        "No",
+        "Yes"
+      ]
+    },
+    "marketing_word_of_mouth": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        "No",
+        "Yes"
+      ]
+    },
+    "has_loan_account": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        "Don't know",
+        "Don\u2019t know (Do not show)",
+        "Have now",
+        "Never had",
+        "Used to have but don't have now",
+        "Used to have but don\u2019t have now"
+      ]
+    },
+    "has_internet_banking": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        "Don't know",
+        "Don\u2019t know (Do not show)",
+        "Have now",
+        "Never had",
+        "Used to have but don't have now",
+        "Used to have but don\u2019t have now"
+      ]
+    },
+    "has_debit_card": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        "Don't know",
+        "Have now",
+        "Never had",
+        "Used to have but don't have now",
+        "Used to have but don\u2019t have now"
+      ]
+    },
+    "future_risk_theft_stock": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        "No",
+        "Yes"
+      ]
+    },
+    "business_age_months": {
+      "type": "number",
+      "nullable": true,
+      "minimum": 0
+    },
+    "medical_insurance": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        "Don't know",
+        "Don\u2019t know (Do not show)",
+        "Have now",
+        "Never had",
+        "Used to have but don't have now",
+        "Used to have but don\u2019t have now"
+      ]
+    },
+    "funeral_insurance": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        "Don't know",
+        "Don\u2019t know (Do not show)",
+        "Have now",
+        "Never had",
+        "Used to have but don't have now",
+        "Used to have but don\u2019t have now"
+      ]
+    },
+    "motivation_make_more_money": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        "No",
+        "Yes"
+      ]
+    },
+    "uses_friends_family_savings": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        "Don't know",
+        "Don\u2019t know (Do not show)",
+        "Have now",
+        "Never had",
+        "Used to have but don't have now",
+        "Used to have but don\u2019t have now"
+      ]
+    },
+    "uses_informal_lender": {
+      "type": "string",
+      "nullable": true,
+      "enum": [
+        "Don't know",
+        "Don\u2019t know (Do not show)",
+        "Have now",
+        "Never had",
+        "Used to have but don't have now",
+        "Used to have but don\u2019t have now"
+      ]
+    }
+  }
+}

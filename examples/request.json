@@ -1,0 +1,43 @@
+{
+  "records": [
+    {
+      "country": "eswatini",
+      "owner_age": 40.0,
+      "attitude_stable_business_environment": "No",
+      "attitude_worried_shutdown": "No",
+      "compliance_income_tax": "No",
+      "perception_insurance_doesnt_cover_losses": "No",
+      "perception_cannot_afford_insurance": "No",
+      "personal_income": 2000.0,
+      "business_expenses": 3000.0,
+      "business_turnover": 6000.0,
+      "business_age_years": 4.0,
+      "motor_vehicle_insurance": "Don't know",
+      "has_mobile_money": "Don't know",
+      "current_problem_cash_flow": "No",
+      "has_cellphone": "No",
+      "owner_sex": "Female",
+      "offers_credit_to_customers": "No",
+      "attitude_satisfied_with_achievement": "No",
+      "has_credit_card": "Don't know",
+      "keeps_financial_records": "No",
+      "perception_insurance_companies_dont_insure_businesses_like_yours": "No",
+      "perception_insurance_important": "No",
+      "has_insurance": "No",
+      "covid_essential_service": "No",
+      "attitude_more_successful_next_year": "No",
+      "problem_sourcing_money": "No",
+      "marketing_word_of_mouth": "No",
+      "has_loan_account": "Don't know",
+      "has_internet_banking": "Don't know",
+      "has_debit_card": "Don't know",
+      "future_risk_theft_stock": "No",
+      "business_age_months": 3.0,
+      "medical_insurance": "Don't know",
+      "funeral_insurance": "Don't know",
+      "motivation_make_more_money": "No",
+      "uses_friends_family_savings": "Don't know",
+      "uses_informal_lender": "Don't know"
+    }
+  ]
+}

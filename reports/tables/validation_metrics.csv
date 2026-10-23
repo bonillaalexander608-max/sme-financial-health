@@ -1,0 +1,2 @@
+"validation_n","training_n","total_labeled_n","competition_test_n","accuracy","f1_macro","f1_weighted","multiclass_log_loss"
+1924,7694,9618,2405,0.882016632016632,0.814117918413983,0.876361446711193,0.299876750400223

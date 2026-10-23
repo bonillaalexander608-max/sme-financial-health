@@ -1,0 +1,8 @@
+{
+  "validation_probability_max_absolute_difference": 1.4901e-08,
+  "competition_test_rows": 2405,
+  "submission_label_agreement": 1,
+  "smoke_tests": "see tests/smoke.R and tests/http_smoke.py",
+  "r_prediction_and_input_checks": "passed",
+  "http_checks": "passed: health, schema, prediction, malformed JSON, unsupported country, batch limit, body size"
+}
